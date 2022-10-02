@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
 
 from apps.base.servicies.get_random_name import faker_name

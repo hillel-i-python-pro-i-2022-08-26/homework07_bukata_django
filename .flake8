@@ -4,3 +4,7 @@ exclude =
     venv
 per-file-ignores =
     __init__.py:F401
+per-file-ignores =
+    models.py:F401
+per-file-ignores =
+    tests.py:F401
