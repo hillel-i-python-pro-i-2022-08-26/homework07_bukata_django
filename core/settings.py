@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#should not be showed publc
+# should not be showed publc
 SECRET_KEY = "django-insecure-x&+i=wr93jjy@eaxf$)(zf+*_3ham(zc_l#_%ik5dmg9&ef*2g"
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 # connected applications (those are preinstalled
-#made division on django apps
+# made division on django apps
 DJANGO_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -41,15 +41,15 @@ DJANGO_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
-#apps.ExampleDjangoConfig our app connected file
-#made division on what we add
+# apps.ExampleDjangoConfig our app connected file
+# made division on what we add
 LOCAL_APPS = [
-    'apps.base.apps.ExampleConfig',
+    "apps.base.apps.ExampleConfig",
 ]
-#made division on what third party add
+# made division on what third party add
 THIRD_PARTY_APPS = []
 
- # general combination of all apps (made by us)
+# general combination of all apps (made by us)
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
 
 MIDDLEWARE = [
@@ -68,8 +68,7 @@ ROOT_URLCONF = "core.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / 'templates']
-        ,
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -103,9 +102,15 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
     },
-    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",},
-    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",},
-    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",},
+    {
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    },
 ]
 
 
