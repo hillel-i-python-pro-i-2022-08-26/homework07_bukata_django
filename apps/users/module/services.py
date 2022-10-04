@@ -14,4 +14,4 @@ def get_user() -> User:
 
 def generate_fake_users(amount: int = 10) -> Iterator[User]:
     for _ in range(amount):
-        yield get_user()
+        return get_user()
