@@ -1,9 +1,10 @@
 from django.urls import path
 from . import views
 
-urlpatterns = [
-    path("", views.say_hi, name="say_hi"),
-]
+app_name = "base_hello"
+# urlpatterns = [
+#    path("", views.say_hi, name="say_hi"),
+# ]
 # here we call function as an object, we give name for this path
 
 # urlpatterns = [
@@ -11,6 +12,6 @@ urlpatterns = [
 # ]
 # path for index view
 
-# urlpatterns = [
-#    path("", views.random_mes, name="random_mes"),
-# ]
+urlpatterns = [
+    path("", views.random_mes, name="random_mes"),
+]
