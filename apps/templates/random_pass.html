@@ -1,8 +1,9 @@
 {% extends '_helpers/base_users.html' %}}
 
 {% block content %}
-    <p>
-        <span>Hi, your passwords are: </span>
-        <span>{{random_password}} </span>>
-    </p>
+    <ol>
+            {% for password in random_password %}
+                <li>{{ password}}</li>
+            {% endfor %}
+    </ol>
 {% endblock %}

@@ -1,5 +1,14 @@
 {% extends '_helpers/base_users.html' %}}
 
 {% block content %}
-    <p>hi {{random_email}}</p>
+    <ol>
+            {% for email in random_email %}
+                <li>{{ email}}</li>
+            {% endfor %}
+    </ol>
+     <ol>
+            {% for user in users %}
+                <li>{{ user}}</li>
+            {% endfor %}
+    </ol>
 {% endblock %}

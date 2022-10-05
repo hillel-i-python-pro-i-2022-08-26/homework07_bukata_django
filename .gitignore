@@ -1,2 +1,6 @@
 .idea/
 venv/
+apps/base
+templates/_helpers/_base.html
+templates/index.html
+templates/random_message.html

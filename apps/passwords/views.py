@@ -5,4 +5,11 @@ from apps.passwords.servicies.get_random_password import faker_password
 
 
 def random_password(request: HttpRequest) -> HttpResponse:
-    return render(request, "random_pass.html", {"random_password": faker_password()})
+    return render(
+        request,
+        "random_pass.html",
+        {
+            "random_password": faker_password(),
+            "title": "Passwords",
+        },
+    )
