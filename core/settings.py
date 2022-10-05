@@ -46,7 +46,6 @@ DJANGO_APPS = [
 # apps.ExampleDjangoConfig our app connected file
 # made division on what we add
 LOCAL_APPS = [
-    "apps.base.apps.ExampleConfig",
     "apps.users.apps.UsersConfig",
     "apps.emails.apps.EmailsConfig",
     "apps.passwords.apps.PasswordsConfig",

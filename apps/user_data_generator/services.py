@@ -15,6 +15,3 @@ def generate_faker_user_data():
             num_rows=10,
         )
     )
-
-
-print(generate_faker_user_data())

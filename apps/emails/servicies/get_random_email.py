@@ -9,6 +9,3 @@ def faker_email():
         email = fake.unique.email()
         emails.append(email)
     return emails
-
-
-print(faker_email())
