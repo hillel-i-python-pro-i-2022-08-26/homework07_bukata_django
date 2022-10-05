@@ -15,6 +15,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # base folder like rout dir
 BASE_DIR = Path(__file__).resolve().parent.parent
+# add path to apps folder)
+APPS_DIR = BASE_DIR.joinpath("apps")
 
 
 # Quick-start development settings - unsuitable for production
@@ -45,6 +47,10 @@ DJANGO_APPS = [
 # made division on what we add
 LOCAL_APPS = [
     "apps.base.apps.ExampleConfig",
+    "apps.users.apps.UsersConfig",
+    "apps.emails.apps.EmailsConfig",
+    "apps.passwords.apps.PasswordsConfig",
+    "apps.user_data_generator.apps.UserDataGeneratorConfig",
 ]
 # made division on what third party add
 THIRD_PARTY_APPS = []
@@ -68,7 +74,7 @@ ROOT_URLCONF = "core.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "templates"],
+        "DIRS": [APPS_DIR.joinpath("templates")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -112,8 +118,6 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
-
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 # its for file configuration (for Makefile in the future)

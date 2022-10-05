@@ -21,4 +21,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("apps.base.urls")),
     path("<name>", include("apps.base.urls")),
+    path("passwords/", include("apps.passwords.urls")),
+    path("emails/", include("apps.emails.urls")),
+    path("users/", include("apps.users.urls")),
+    path("user_data_generator/", include("apps.user_data_generator.urls")),
 ]
