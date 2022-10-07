@@ -1,5 +1,9 @@
 {% extends '_helpers/base_users.html' %}}
 
 {% block content %}
-    <p>{{data}}</p>
+    <ol>
+            {% for data in data %}
+                <li>{{ data}}</li>
+            {% endfor %}
+    </ol>
 {% endblock %}

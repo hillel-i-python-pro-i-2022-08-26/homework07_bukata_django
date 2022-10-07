@@ -8,7 +8,7 @@ def generate_faker_user_data():
     return json.loads(
         fake.json(
             data_columns=[
-                ("Username", "username"),
+                ("Username", "user_name"),
                 ("Email", "email"),
                 ("Password", "password"),
             ],

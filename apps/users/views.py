@@ -9,5 +9,8 @@ def get_users(request: HttpRequest) -> HttpResponse:
     return render(
         request,
         "random_login.html",
-        {"users": generate_fake_users()},
+        {
+            "users": generate_fake_users(),
+            "title": "Users",
+        },
     )

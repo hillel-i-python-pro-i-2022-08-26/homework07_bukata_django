@@ -9,5 +9,8 @@ def get_data(request: HttpRequest) -> HttpResponse:
     return render(
         request,
         "data.html",
-        {"data": generate_faker_user_data()},
+        {
+            "data": generate_faker_user_data(),
+            "title": "General users data",
+        },
     )
