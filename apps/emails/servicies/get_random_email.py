@@ -3,9 +3,9 @@ from faker import Faker
 fake = Faker()
 
 
-def faker_email():
+def faker_email(amount: int):
     emails = []
-    for i in range(10):
+    for i in range(amount):
         email = fake.unique.email()
         emails.append(email)
     return emails
