@@ -3,7 +3,7 @@
 {% block content %}
     <ol>
             {% for data in data %}
-                <li>{{ data}}</li>
+                <li>{{ data.Username}} - {{ data.Email}}- {{ data.Password}}</li>
             {% endfor %}
     </ol>
 {% endblock %}
