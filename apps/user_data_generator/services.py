@@ -4,7 +4,7 @@ from faker import Faker
 fake = Faker()
 
 
-def generate_faker_user_data():
+def generate_faker_user_data(amount: int):
     return json.loads(
         fake.json(
             data_columns=[
@@ -12,6 +12,6 @@ def generate_faker_user_data():
                 ("Email", "email"),
                 ("Password", "password"),
             ],
-            num_rows=10,
+            num_rows=amount,
         )
     )
